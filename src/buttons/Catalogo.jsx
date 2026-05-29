@@ -1,19 +1,9 @@
-// Catalogo.jsx
-
-function Catalogo({ children, onClick, color }) {
+function Catalogo({ onClick }) {
   return (
-    <button
-      onClick={onClick}
-      style={{
-        backgroundColor: color,
-        padding: "10px 20px",
-        border: "none",
-        borderRadius: "8px",
-        color: "white",
-        cursor: "pointer"
-      }}
-    >
-      {children}
+    <button className="btn-catalogo" onClick={onClick} title="Ver catálogo de cortes y ofertas">
+      <span className="material-symbols-outlined">
+        content_cut
+     </span>
     </button>
   );
 }

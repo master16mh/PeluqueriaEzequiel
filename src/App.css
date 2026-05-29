@@ -11,10 +11,46 @@
 }
 
 .logoPeluqueria {
-  width: 80%;
+  width: 40%;
   border-radius: 10%;
   border-color: rgb(255, 0, 149);
   border-style: outset;
+}
+
+.principal h1 {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  
+}
+
+.botones {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.btn-carrito, .btn-catalogo, .btn-turnero{
+  background: transparent;
+  border: none;
+}
+
+.material-symbols-outlined {
+  color: white;
+  background-color: black;
+  border-radius: 10%;
+  font-size: 350%;
+  margin-left: 0;
+  transition: 0.3s;
+  padding: 20%;
+}
+
+.material-symbols-outlined:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid grey;
+  cursor: pointer;
 }
 
 #center {

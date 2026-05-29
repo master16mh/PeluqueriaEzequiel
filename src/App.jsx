@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import peluqueriacalidad from './assets/peluqueriacalidad.jpeg'
-import Catalogo from './buttons/Catalogo'
+import Catalogo from './Buttons/Catalogo'
+import Carrito from './Buttons/Carrito'
+import Turnero from './Buttons/Turnero'
 import './App.css'
 
 function App() {
@@ -13,11 +15,12 @@ function App() {
         </div>
         <div className='principal'>
           <img className="logoPeluqueria" src={peluqueriacalidad} alt="Peluqueria"></img>
-          <h1>Evolución Peluquería</h1>
-          <h2>catalogo de cortes</h2>
-          <h2>Unisex</h2>
-          <h2>♂️♀️</h2>
-          <Catalogo>catalogo de ofertas y cortes</Catalogo>
+          <h1>Belleza, cosmética y cuidado personal</h1>
+          <div className='botones'>
+             <Catalogo></Catalogo>
+             <Carrito></Carrito>
+             <Turnero></Turnero>
+          </div>
         </div>
       </section>
       <section>
