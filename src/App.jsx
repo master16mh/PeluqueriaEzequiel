@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import peluqueriacalidad from './assets/peluqueriacalidad.jpeg'
+import Catalogo from './buttons/Catalogo'
 import './App.css'
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
         <div className='principal'>
           <img className="logoPeluqueria" src={peluqueriacalidad} alt="Peluqueria"></img>
           <h1>Evolución Peluquería</h1>
+          <h2>catalogo de cortes</h2>
           <h2>Unisex</h2>
           <h2>♂️♀️</h2>
+          <Catalogo>catalogo de ofertas y cortes</Catalogo>
         </div>
       </section>
       <section>
