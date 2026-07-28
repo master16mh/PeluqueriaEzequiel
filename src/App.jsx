@@ -1,34 +1,21 @@
-import { useState } from 'react'
-import peluqueriacalidad from './assets/peluqueriacalidad.jpeg'
-import Catalogo from './Buttons/Catalogo'
-import Carrito from './Buttons/Carrito'
-import Turnero from './Buttons/Turnero'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import InicioPage from './Pages/InicioPage'
+import CatalogoPage from './Pages/CatalogoPage'
+import CarritoPage from './Pages/CarritoPage'
+import TurneroPage from './Pages/TurneroPage'
+import CortesMascuPage from './Pages/CortesMascuPage'
+import CortesFemalPage from './Pages/CortesFemalPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-        </div>
-        <div className='principal'>
-          <img className="logoPeluqueria" src={peluqueriacalidad} alt="Peluqueria"></img>
-          <h1>Belleza, cosmética y cuidado personal</h1>
-          <div className='botones'>
-             <Catalogo></Catalogo>
-             <Carrito></Carrito>
-             <Turnero></Turnero>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <footer>Desde el 2000</footer>
-        </div>
-      </section>
-    </>
+    <Routes>
+      <Route path="/" element={<InicioPage />} />
+      <Route path="/catalogo" element={<CatalogoPage />} />
+      <Route path="/carrito" element={<CarritoPage/>} />
+      <Route path="/turnero" element={<TurneroPage/>} />
+      <Route path="/cortes/masculinos" element={<CortesMascuPage/>} />
+      <Route path="/cortes/femeninos" element={<CortesFemalPage/>} />
+    </Routes>
   )
 }
 

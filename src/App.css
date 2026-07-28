@@ -30,10 +30,86 @@
   padding: 20px;
 }
 
+.btn-volver {
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  transform: scale(1.1);
+}
+
+
+.botones-HyM {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn-mascu, .btn-female {
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 125px;
+
+  transition: all 0.3s ease;
+}
+
 
 .btn-carrito, .btn-catalogo, .btn-turnero{
   background: transparent;
   border: none;
+}
+
+#cortes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cortes {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+
+.react-calendar {
+  color: rgb(0, 0, 0);
+}
+
+.react-calendar button {
+  color: black !important;
+}
+
+.react-calendar__month-view__days__day {
+  color: black !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: red !important;
 }
 
 .material-symbols-outlined {
@@ -113,32 +189,5 @@
   }
 }
 
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
 
-.ticks {
-  position: relative;
-  width: 100%;
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
-
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
-}
