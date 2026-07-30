@@ -1,7 +1,7 @@
 import peluqueriacalidad from '../assets/peluqueriacalidad.jpeg'
 import Librito from '../Cuts/Fem/Librito.jpg'
 import Pixie from '../Cuts/Fem/Pixie.jpg'
-import Volver from '../Buttons/VolverButton'
+import Volver from '../Buttons/VolverEstilosProdu'
 
 function CortesFemalPage() {
     return (

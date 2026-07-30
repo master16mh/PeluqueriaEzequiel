@@ -3,7 +3,7 @@ import Fleco from '../Cuts/Masc/Fleco.jpg'
 import Mediolargo from '../Cuts/Masc/Medio-largo.jpg'
 import TaperFade from '../Cuts/Masc/Taper-fade.jpg'
 import Texturizado from '../Cuts/Masc/Texturizado.jpg'
-import Volver from '../Buttons/VolverButton'
+import Volver from '../Buttons/VolverEstilosProdu'
 
 function CortesMascuPage() {
   return (

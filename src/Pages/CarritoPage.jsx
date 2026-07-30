@@ -1,5 +1,6 @@
 import peluqueriacalidad from '../assets/peluqueriacalidad.jpeg'
 import Volver from '../Buttons/VolverButton'
+import Carrito from '../Components/Carrito'
 
 function CarritoPage() {
   return (
@@ -14,6 +15,7 @@ function CarritoPage() {
           />
 
           <h1>Carrito</h1>
+          <Carrito/>
         </div>
       </section>
     </>

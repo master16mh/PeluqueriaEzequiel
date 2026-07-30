@@ -2,6 +2,7 @@ import peluqueriacalidad from '../assets/peluqueriacalidad.jpeg'
 import Mascu from '../Buttons/MascuButton'
 import Female from '../Buttons/FemalButton'
 import Volver from '../Buttons/VolverButton'
+import Productos from '../Components/Productos'
 
 function CatalogoPage() {
   return (
@@ -22,6 +23,8 @@ function CatalogoPage() {
             <Mascu>Cortes Masculinos</Mascu>
             <Female>Cortes Femeninos</Female>
          </div>
+
+         <Productos/>
       </section>
     </>
   )

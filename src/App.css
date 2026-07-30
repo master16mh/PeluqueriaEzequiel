@@ -30,6 +30,8 @@
   padding: 20px;
 }
 
+
+
 .btn-volver {
   width: 50px;
   height: 50px;
@@ -94,7 +96,100 @@
   object-fit: cover;
 }
 
+.contenedor-productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.card-producto {
+    width: 220px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.card-producto h3 {
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-producto button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carrito {
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.vacio {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
+
+
+.card-producto button {
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-producto button:hover {
+    background-color: #ce28ce;
+    transform: scale(1.05);
+}
+
+.mensaje-carrito {
+    background-color: #222;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px auto;
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .react-calendar {
   color: rgb(0, 0, 0);
